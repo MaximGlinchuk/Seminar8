@@ -47,10 +47,10 @@ int minSumRows = 0;
 int sumRows = SumRows(matrix, 0);
 for (int i = 1; i < matrix.GetLength(0); i++)
 {
-  int tempSumRows = SumRows(matrix, i);
-  if (sumRows > tempSumRows)
+  int tempSum = SumRows(matrix, i);
+  if (sumRows > tempSum)
   {
-    sumRows = tempSumRows;
+    sumRows = tempSum;
     minSumRows = i;
   }
 }
